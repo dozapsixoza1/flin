@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Восстановление аккаунта - Flin Role Play</title>
+  <meta name="description" content="Flin Role Play - игровой SA:MP сервер, один из крупнейших проектов в SAMP Android.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <meta name="geo.region" content="RU-MOW" />
+  <meta name="geo.placename" content="Moscow" />
+  <meta name="geo.position" content="64.686314;97.745306" />
+  <meta name="ICBM" content="64.686314, 97.745306" />
+
+  <meta name="csrf-token" content="ZpcrawmDznVSMvp9c3WHAUyrRiFl3r1fHbK8fcY1">
+  
+  <style>
+    body {
+      transition: all 1s ease-in;
+    }
+    body.loading {
+      opacity: 0;
+      /* background-image: unset; */
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+  
+  <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"></script>
+  
+    
+  <script>
+    /*
+    window.SmoothScrollOptions = {
+      animationTime: 800,
+    }
+    */
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+  
+  
+  <link rel="stylesheet" href="assets/css/fonts.css@v=20200401_orange.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-vars.css@v=20200401_orange.css">
+  <link rel="stylesheet" href="assets/css/app.css@v=20200404.css">
+  <link rel="stylesheet" href="assets/css/custom.css@v=20200401_orange_1.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-override.css@v=20200401_orange.css">
+  <style>
+  .errors {
+    display: block;
+  }
+  /*
+  .errors-wrapper {
+    position: relative;
+  }
+  .errors::before {
+    content: '';
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    position: absolute;
+    border-top: 1px solid rgba(0,0,0,.1);
+  }
+  */
+  #g-recaptcha div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+    </head>
+
+<body class="loading">
+  
+  <!-- Rating@Mail.ru counter -->
+  <script type="text/javascript">
+  var _tmr = window._tmr || (window._tmr = []);
+  _tmr.push({id: "3085915", type: "pageView", start: (new Date()).getTime()});
+  (function (d, w, id) {
+    if (d.getElementById(id)) return;
+    var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+    ts.src = "https://top-fwz1.mail.ru/js/code.js";
+    var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+    if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+  })(document, window, "topmailru-code");
+  </script><noscript><div>
+  <img src="https://top-fwz1.mail.ru/counter?id=3085915;js=na" style="border:0;position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
+  </div></noscript>
+  <!-- //Rating@Mail.ru counter -->
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(70820773, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true,
+          trackHash:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/70820773" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151889118-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-151889118-2');
+  </script>
+
+  <main class="container">
+    <div class="row">
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand logo" href="index.html"></a>
+    <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="true" aria-label="Меню">
+      <span class="navbar-toggler-bar bar1"></span>
+      <span class="navbar-toggler-bar bar2"></span>
+      <span class="navbar-toggler-bar bar3"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="navbar-nav mr-auto font-medium noselect">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Главная</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="donate.html">Донат</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#start">Начать играть</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="restore.html">Восстановить аккаунт</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://t.me/nex_studio" target="_blank" rel="noopener">Форум</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://t.me/nex_studio" target="_blank" rel="noopener">
+            <i class="fab fa-vk"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+    <div class="row">
+  <div class="col col-12">
+    <div class="d-none d-sm-block mt-5"></div>
+    <div class="row justify-content-md-center align-items-center">
+      <div class="col col-12 col-md-8 col-lg-6 col-xl-6">
+      <div class="card shadow-brand animated fadeInUp">
+        <div class="card-body noselect">
+          <h5 class="card-title text-center d-block d-sm-none"><i class="fas fa-universal-access text-primary"></i> Восстановление аккаунта</h5>
+          <h4 class="card-title text-center d-none d-sm-block d-md-none"><i class="fas fa-universal-access text-primary"></i> Восстановление аккаунта</h4>
+          <h3 class="card-title text-center d-none d-md-block d-lg-none"><i class="fas fa-universal-access text-primary"></i> Восстановление аккаунта</h3>
+          <h2 class="card-title text-center d-none d-lg-block"><i class="fas fa-universal-access text-primary"></i> Восстановление аккаунта</h2>
+          <p class="card-subtitle text-center mb-2 text-muted">Забыл пароль или хочешь его поменять?</p>
+          <hr>
+
+          <form class="text-center" id="restore-form" action="https://flin-rp.com/restore/make" method="POST">
+            <input type="hidden" name="_token" value="ZpcrawmDznVSMvp9c3WHAUyrRiFl3r1fHbK8fcY1">            <input type="hidden" name="desc" value="Покупка игровой валюты Flin RolePlay">
+            <input name="action" value="fk_go" type="hidden">
+
+            <div class="form-group errors-wrapper">
+              <div class="invalid-feedback errors"></div>
+            </div>
+            <div class="form-group errors-wrapper">
+              <div class="valid-feedback errors"></div>
+            </div>
+
+            <div class="form-group text-center">
+              <label for="input_server"><i class="fas fa-gamepad"></i> Сервер</label>
+              <select id="input_server" class="custom-select" required name="server" aria-describedby="input_server_help">
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+              </select>
+              <small id="input_server_help" class="form-text text-muted">Выбери сервер аккаунта (персонажа)</small>
+            </div>
+            <div class="form-group text-center">
+              <label for="input_email"><i class="fas fa-at"></i> E-mail аккаунта</label>
+              <input type="email" id="input_email" name="email" maxlength="64" required autocomplete="on" placeholder="E-mail твоего аккаунта" class="form-control font-medium font-14 text-center" aria-describedby="input_email_help">
+              <small id="input_email_help" class="form-text text-muted">
+                E-mail указанный при регистрации аккаунта (персонажа)<br>
+                <span class="text-black-50">(обратись за <a href="https://t.me/nex_studio" target="_blank" rel="noopener" class="text-black-50"><u>поддержкой на форум</u></a>, если не помнишь его)</span>
+              </small>
+            </div>
+            <hr>
+            
+            <button type="submit" id="submit-button" class="btn btn-secondary btn-lg font-bold"><i class="fas fa-user-shield"></i> Восстановить</button>
+          </form>
+          
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="d-none d-sm-block mb-5"></div>
+  </div>
+</div>
+    <div class="footer row text-center noselect">
+  <div class="logo">
+    <a href="https://t.me/nex_studio" target="_blank" rel="noopener">
+      <img src="assets/images/logo.png" alt="VK">
+    </a>
+  </div>
+  <div class="mt-2 col col-12">
+    <a href="contacts.html" class="text-secondary font-light font-14">Контакты и обратная связь</a>
+  </div>
+  <div class="mt-1 col col-12 font-medium font-14">
+    <a href="https://t.me/nex_studio" target="_blank" rel="noopener">Права защищены &copy Flin Role Play &copy; 2018-2024</a>
+    <!--
+    <div style="opacity: 0.5; padding: 10px 0 0 0">
+        <a href="https://megakassa.ru/ref/link/20053/" title="Платежный агрегатор Мегакасса" target="_blank">
+            <img src="https://megakassa.ru/pr/light_b_ru.jpg" alt="Megakassa" />
+        </a>
+    </div>
+    -->
+  </div>
+</div>
+
+<link rel="manifest" href="manifest.json" />
+
+<script src="OneSignalSDK.js"></script>
+<script>
+  var isCOM = location.origin.indexOf('https://flin-rp.com') != -1;
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: isCOM ? '7e58068f-7baf-4ee2-acc1-9b8188eeb72d' : '7efc9d2e-8416-4f44-86c9-a50e19e0565c',
+    });
+  });
+</script>
+<script>
+console.log('%cАСТАНАВИСЬ! ✋', 'font-size: 72px; font-weight: 900;');
+console.log(
+  '%cТы открыл окно, которое необходимо лишь разработчикам.\nВставляя что-то сюда ты позволяешь негодяям заполучить доступ к твоему аккаунту, так что не ведись - будь умничкой!',
+  'font-size: 18px; font-weight: 700;'
+);
+/*
+console.log(
+  '%cP.S> Если ты великий разраб, смело пиши мне сюда: <email> (хорошая ЗП и отличная команда)',
+  'font-family: "Verdana"; font-style: italic; font-size: 14px; font-weight: 400;'
+);
+*/
+</script>
+  </main>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
+  <script>
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    $(document).ready(function () {
+      $('body').removeClass('loading');
+      // если перешли по UTM метке, редиректим по этой же метке, но в Google Play
+      var qs = Object.fromEntries(new URLSearchParams(location.search));
+      if (qs.utm_source && qs.utm_medium && qs.utm_campaign) {
+        // var URL = 'https://play.google.com/store/apps/details?id=com.dimkov.flinlauncher'
+		    var URL = 'https://d1.flin-rp.com/client/apk/flinRelease113_2.apk'
+        try {
+         // для гугл! window.location.href = encodeURI(URL + '&referrer=utm_source=' + qs.utm_source + '&utm_medium=' + qs.utm_medium + '&utm_campaign=' + qs.utm_campaign)
+          window.location.href = encodeURI(URL + '?referrer=utm_source=' + qs.utm_source + '&utm_medium=' + qs.utm_medium + '&utm_campaign=' + qs.utm_campaign)
+        } catch (e) {
+          console.error(e)
+          window.location.href = URL
+        }
+      }
+    });
+  </script>
+  
+
+<script type="text/javascript">
+$(function() {
+  var Email = '';
+  var Pass = '';
+  var isNewPass = Email && Pass;
+  if (window.PasswordCredential && isNewPass) {
+    var credentials = new PasswordCredential({
+      id: Email,
+      password: Pass,
+      name: 'FlinRP'
+    });
+    return navigator.credentials.store(credentials);
+  }
+});
+</script>
+<script>(function(){if (!document.body) return;var js = "window['__CF$cv$params']={r:'87558c2d5f0b56c4',t:'MTcxMzI4NDg5Ny4wNTIwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+
+</html>

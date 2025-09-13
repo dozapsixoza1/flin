@@ -1,0 +1,96 @@
+.display-1 {
+  font-size: 3.5rem;
+}
+.display-2 {
+  font-size: 3rem;
+}
+.display-3 {
+  font-size: 2.5rem;
+}
+.display-4 {
+  font-size: 2rem;
+}
+.display-5 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.display-6 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/* */
+
+.text-primary {
+  color: #ff6500 !important;
+}
+
+/* */
+
+.btn-group-lg>.btn, .btn-lg {
+  border-radius: 2rem;
+  padding: 0.75rem 1.25rem;
+  line-height: 1.75;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 173, 1, 0.35);
+}
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 173, 1, 0.35);
+}
+
+.btn-primary {
+  color: #fff;
+  background: #ff6500;
+  border-color: #FF7E00;
+  box-shadow: 0 4px 25px 0px rgba(255, 255, 255, 0.75);
+}
+.btn-primary:hover {
+  color: #FF8E00;
+  border-color: #FF8E00;
+  background-color: #fff;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #000;
+  background-color: #FF6800;
+  border-color: #FF7E00;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 173, 1, 0.35);
+}
+
+/* */
+
+.btn-secondary {
+  color: #FF8E00;
+  border-color: #FF8E00;
+  background-color: #fff;
+  box-shadow: 0 4px 25px 0px rgba(255, 255, 255, 0.75);
+}
+.btn-secondary:hover {
+  color: #fff;
+  background: #ff6500;
+  border-color: #FF7E00;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  color: #000;
+  background-color: #FF6800;
+  border-color: #FF7E00;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 173, 1, 0.35);
+}
+
+/* */
+
+.form-control:focus, .custom-select:focus {
+  border-color: #FF7E00;
+  box-shadow: 0 0 0 0.2rem rgba(255, 173, 1, 0.35);
+}
